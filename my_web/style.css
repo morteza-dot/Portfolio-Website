@@ -54,6 +54,7 @@ body {
   text-align: center;
   justify-content: center;
   overflow: hidden;
+  transition: background-color 1s ease-in-out 0.3s;
 }
 .nav a {
   width: 100%;
@@ -67,6 +68,7 @@ body {
   text-decoration: none;
 }
 .nav :hover {
+  transition-delay: 0.2s;
   background-color: black;
   color: white;
 }
@@ -439,6 +441,7 @@ hr {
 .pd:hover {
   border: 1px solid black;
   transform: scale(1.05);
+  cursor: default;
 }
 .pd:active {
   transform: scale(0.95) rotateZ(1.7deg);
@@ -486,7 +489,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 75px;
+  width: 90px;
   height: 30px;
   background-color: rgb(2, 30, 90);
   border-radius: 40px;
