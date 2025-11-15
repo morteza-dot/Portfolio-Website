@@ -751,3 +751,22 @@ footer nav a:hover {
 footer div a:hover {
   color: blue;
 }
+.progress {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 5px;
+  background-color: rgb(0, 116, 210);
+  width: 100%;
+  animation: scroll-animation 1s linear;
+  animation-timeline: scroll(root y);
+}
+@keyframes scroll-animation {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
