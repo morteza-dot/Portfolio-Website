@@ -1,5 +1,5 @@
 const scrollBtn = document.querySelector("#homebtn");
-const section2 = document.querySelector("#forbtn");
+const section2 = document.querySelector("#about");
 
 window.addEventListener("scroll", () => {
   const rect = section2.getBoundingClientRect();

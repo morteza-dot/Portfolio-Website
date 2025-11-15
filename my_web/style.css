@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  min-height: 100dvh;
+  height: 100dvh;
+  height: auto;
 }
 #homebtn {
   cursor: pointer;
@@ -18,16 +19,10 @@ body {
   background-color: blue;
   padding: 15px 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 1px);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 1s ease;
   z-index: 999;
 }
 #homebtn i {
   color: white;
-}
-#homebtn.show {
-  opacity: 1;
 }
 
 .na {
@@ -54,7 +49,7 @@ body {
   text-align: center;
   justify-content: center;
   overflow: hidden;
-  transition: background-color 1s ease-in-out 0.3s;
+  transition: all 0.5s ease-in-out 0.3s;
 }
 .nav a {
   width: 100%;
@@ -68,12 +63,11 @@ body {
   text-decoration: none;
 }
 .nav :hover {
-  transition-delay: 0.2s;
   background-color: black;
   color: white;
 }
 section {
-  min-height: 70vh;
+  min-height: 100dvh;
   padding: 100px 50px;
   display: flex;
   align-items: center;
@@ -127,7 +121,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 140px;
+  width: 160px;
   height: 45px;
   background-color: black;
   border-radius: 8px;
@@ -166,6 +160,9 @@ a {
   margin-left: 10px;
   transition: transform 0.5s ease;
 }
+.dn i {
+  font-size: large;
+}
 .dn a {
   font-size: 15px;
   display: flex;
@@ -183,7 +180,7 @@ a {
   color: white;
 }
 .cont {
-  width: auto;
+  width: 55%;
   height: auto;
   display: flex;
   margin-left: -17px;
@@ -227,7 +224,7 @@ hr {
   position: absolute;
   aspect-ratio: 1/1;
   z-index: 10;
-  left: 75%;
+  left: 84%;
   top: 25%;
   width: max(500px);
   height: max(500px);
@@ -244,11 +241,10 @@ hr {
 }
 
 #about {
-  top: -55%;
   z-index: 1;
 }
 #home {
-  min-height: 80vh;
+  height: 100dvh;
   left: -10%;
 }
 .abtme {
@@ -370,9 +366,7 @@ hr {
   width: 500px;
   height: 500px;
 }
-#projects {
-  top: -70%;
-}
+
 .phead {
   height: 25%;
   position: absolute;
@@ -503,9 +497,7 @@ hr {
 .pdfooter div:hover {
   background-color: rgb(2, 50, 152);
 }
-#services {
-  top: -80%;
-}
+
 .sd {
   box-sizing: border-box;
   background: rgba(217, 217, 217, 0.58);
@@ -546,6 +538,9 @@ hr {
 .sd:hover .content p {
   color: white;
 }
+.sd p span {
+  color: rgba(0, 0, 0, 0.511);
+}
 
 .sd img {
   border: 1px solid rgba(255, 228, 196, 0);
@@ -571,4 +566,170 @@ hr {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+#contact {
+  margin-bottom: 0;
+  position: relative;
+}
+.chead {
+  height: 25%;
+  position: absolute;
+  margin: 0 auto 0;
+  top: 10%;
+  text-align: center;
+}
+.chead h3 {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 700;
+}
+.cf {
+  box-sizing: border-box;
+  background: rgba(163, 163, 163, 0.705);
+  border: 1px solid rgba(255, 255, 255, 0);
+  box-shadow: 12px 17px 30px rgba(0, 0, 0, 0.22),
+    -12px 15px 30px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+  flex-direction: column;
+  width: 40%;
+  height: 55%;
+  padding: 5px 0 5px 0;
+  position: absolute;
+  left: 45%;
+  top: 25%;
+}
+#cform {
+  height: 100%;
+  width: 100%;
+}
+.cf input {
+  width: 85%;
+  height: 6%;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+#submit {
+  width: 85%;
+  height: 8%;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: linear-gradient(
+    to bottom right,
+    rgb(8, 85, 152),
+    rgb(0, 179, 210)
+  );
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  transition: all 0.01s ease;
+}
+#submit:active {
+  transform: scale(0.97);
+}
+.cf textarea {
+  width: 85%;
+  height: 40%;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.info * {
+  display: block;
+  margin: 10px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+}
+.info span {
+  color: blue;
+  display: inline;
+}
+.icn {
+  width: 40%;
+  margin-left: 5px;
+  position: absolute;
+  top: 65%;
+  left: 6.7%;
+}
+.icn a {
+  display: inline;
+  margin: 4px;
+}
+.info {
+  width: 40%;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+.info p {
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-left: 6%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0%;
+  height: 40%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+footer div a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: color 0.4s ease;
+}
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  color: rgba(255, 255, 255, 0.47);
+  margin-top: 0;
+}
+footer nav a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: color 0.4s ease;
+}
+footer nav a:hover {
+  color: blue;
+}
+footer div a:hover {
+  color: blue;
 }
