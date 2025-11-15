@@ -67,6 +67,7 @@ body {
   color: white;
 }
 section {
+  margin: 0 auto 0;
   min-height: 100dvh;
   padding: 100px 50px;
   display: flex;
@@ -241,11 +242,15 @@ hr {
 }
 
 #about {
+  left: 5%;
+  margin: 0 auto;
+  margin-bottom: 0;
+  position: relative;
   z-index: 1;
 }
 #home {
   height: 100dvh;
-  left: -10%;
+  left: -15%;
 }
 .abtme {
   position: absolute;
@@ -366,7 +371,12 @@ hr {
   width: 500px;
   height: 500px;
 }
-
+#projects {
+  left: 0;
+  margin: 0 auto;
+  margin-bottom: 0;
+  position: relative;
+}
 .phead {
   height: 25%;
   position: absolute;
@@ -498,6 +508,12 @@ hr {
   background-color: rgb(2, 50, 152);
 }
 
+#services {
+  left: 0;
+  margin: 0 auto;
+  margin-bottom: 0;
+  position: relative;
+}
 .sd {
   box-sizing: border-box;
   background: rgba(217, 217, 217, 0.58);
@@ -568,6 +584,8 @@ hr {
   justify-content: space-around;
 }
 #contact {
+  left: 0;
+  margin: 0 auto;
   margin-bottom: 0;
   position: relative;
 }
