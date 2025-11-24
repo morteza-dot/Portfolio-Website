@@ -1,0 +1,8 @@
+{
+  "platform": "python",
+  "app": "my-django-app",
+  "project_type": "django",
+  "python_version": "3.11",
+  "install_command": "pip install -r requirements.txt",
+  "start_command": "python manage.py runserver 0.0.0.0:8000"
+}
