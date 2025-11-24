@@ -1,0 +1,272 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{% static 'css/style.css'  %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morteza</title>
+    <script src="https://kit.fontawesome.com/ed2c803caf.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="progress"></div>
+      <main>
+  <nav class="na">
+      <div class="nav">
+         <a href="#home"><i class="fa-regular fa-house"></i>&nbsp;Home</a>
+      </div>
+      <div class="nav">
+         <a href="#about"><i class="fa-regular fa-address-card"></i>&nbsp;About</a>
+      </div>
+      <div class="nav">
+         <a href="#projects"><i class="fa-regular fa-folder-open"></i>&nbsp;Projects</a>
+      </div>
+      <div class="nav">
+         <a href="#services"><i class="fa-solid fa-code"></i>&nbsp;Services</a>
+      </div>
+      <div class="nav">
+         <a href="#contact"><i class="fa-regular fa-envelope"></i>&nbsp;Contact</a>
+      </div>
+  </nav>
+  <div class="container">
+  <section id="home">
+
+     <div class="text">
+      <div class="availbility">
+        <p> . Available for freelance work </p>
+      </div>
+        <h1> Hi, I'm Morteza</h1>
+        <video class="vid" width="350px" autoplay loop muted>
+            <source src="{% static 'css/textvideo.mp4' %}" type="video/mp4">
+        </video><br><br>
+      <div class="paragraph">
+          <p >
+            I create beautiful, functional, and user-centered digital experiences.With <br>
+            one year of experiences in web Development, I bring ideas to life through<br>
+            clean code and thoughtful design
+          </p>
+      </div>
+        
+      <div class="emo">
+          <i class="fa-solid fa-location-dot"> </i> <strong>Based in Iran</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+          <i class="fa-solid fa-briefcase"></i> <strong>Available Now</strong>
+      </div>
+      <div class="cont">
+        <div class="hire">
+            <a href="#about"><i class="fa-solid fa-arrow-right"></i> &nbsp;About Me</a>
+        </div>
+        <div class="dn">
+            <a href="#contact"><i class="fa-solid fa-square-phone"></i>&nbsp;Contact Me</a>
+        </div>
+      </div>
+
+       <p class="line">_________________________________________________</p>
+           <h5 id="follow">Follow me: </h5> 
+            <a href="https://github.com/morteza-dot"><i class="fa-brands fa-github"></i></a>
+            <a href="https://discordapp.com/users/morty2019"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.linkedin.com/in/morteza-setoodeh-610618388?trk=contact-info"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/morteza_8.4?igsh=bnY1cHJ2Z2hsMTZn" ><i class="fa-brands fa-instagram"></i></a>
+        </nav>
+     </div>
+      <figure id="homePic">
+          <img class="img1" src="{% static 'img/no1.jpeg' %}">
+        </figure>
+
+  </section>
+  <section id="about">
+    <h5 class="abtme"> ABOUT ME </h5>
+    <div class="title2">
+      <h2 class="titleS2" > Building Meaningful <br> Digital Experiences </h2>
+      <hr id="hrS2">
+    </div>
+    <article class="articleP">
+      <p> I'm a creative front-end developer passionate about building modern and responsive web experiences. <br> 
+      My jorney began with a love for design and evolved into a deep curiosity for how the web works - combining <br>
+      logic with creativity to bring ideas to life. <br><br>
+
+      When I'm not coding, I enjoy learning new technologies, improving my projects, <br>
+      and exploring better ways to make the web faster and more engaging. <br>
+      I believe in countinuous learning, attention to details, and the power of clean, meaningful design.
+      </p>
+    </article>
+    <h3 id="h3S2"> What Drives Me </h3>
+    <div class="whtdrvsme">
+      <div id="onethird">
+        <p id="t1"><i class="fa-solid fa-code"></i> Languages </p>  
+        <p id="subT1"> HTML,Css,JavaScript,C++,Python</p>
+      </div>
+      <div id="twothird"> 
+        <p id="t2"><i class="fa-solid fa-graduation-cap"></i> Education </p>  
+        <p class="subT2"> Studying for M.A. in Computer</p>
+        <p class="subT2"> Engineering</p>
+      </div>
+      <div id="threethird"> 
+        <p id="t3"><i class="fa-solid fa-folder-open"></i> Projects </p>  
+        <p id="subT3"> It's my first project </p>
+      </div>
+    </div>
+    <img id="img2" src="{% static 'img/no2.jpg' %}">
+  </section>
+
+  <section id="projects">
+    <header class="phead">
+      <h2> Featured Works </h2>
+      <hr>
+      <p>
+        A showcase of my recent projects, demonstrating expertise in full-stack <br>
+        development, modern frameworks, and creative problem-solving
+      </p>
+    </header>
+
+    <div class="pbody">
+      <div class="pd">
+        <figure>
+        <img src="{% static 'img/notmade.jpg' %}" alt="Yet To Be Created" width="300" height="200">
+        </figure>
+        <h3> Coming Soon... </h3>
+        <p>New projects will be uploaded here <br> soon. </p>
+      </div>
+
+      <div class="pd">
+        <figure>
+         <img src="{% static 'img/portfolio.jpg' %}" alt="Portfolio" width="300" height="200">
+        </figure>
+        <h4> Portfolio Website</h4>
+        <p>Personal portfolio to showcase my design and <br>
+        coding projects.</p>
+        
+        <div class="pdd">  
+         <div class="tags">
+          <p>HTML</p>
+         </div>
+         <div class="tags">
+          <p>CSS</p>
+         </div>
+         <div class="tags">
+          <P>JS</P>
+         </div>
+       </div>
+       <div class="pdfooter">
+        <div> <a href="https://github.com/morteza-dot/Portfolio-Website.git"><i class="fa-brands fa-github"></i> Github </a></div>
+        <div> <a href=""><i class="fa-solid fa-right-to-bracket"></i>&nbsp;Live Demo</a></div>
+       </div>
+      </div>
+      <div class="pd">
+        <figure>
+        <img src="{% static 'img/notmade.jpg' %}" alt="Yet To Be Created" width="300" height="200">
+        </figure>
+        <h3> Coming Soon... </h3>
+        <p>New projects will be uploaded here <br> soon. </p>
+      </div>
+  </section>
+
+  <section id="services">
+    <header class="phead">
+      <h2> Features & Services </h2>
+      <hr>
+    </header>
+
+    <div class="sbody">
+
+      <div class="sd">
+        <figure>
+         <img src="{% static 'img/wd.png' %}" alt="web development img" width="100%">
+        </figure>
+        <div class="content">
+        <h3> Web Development </h3>
+        <p>Building modern, responsive websites with great UX and performance. </p>
+        </div>
+      </div>
+      <div class="sd">
+        <figure>
+         <img src="{% static 'img/ad.png' %}" alt="app development img" width="100%">
+        </figure>
+        <div class="content">
+        <h3> App Development</h3>
+        <p>Creating sleek and smooth Android & iOS apps <br><br>
+        <span> Not Available Yet. </span></p>
+      </div>
+      </div>
+      <div class="sd">
+        <figure>
+         <img src="{% static 'img/dm.png' %}" alt="digital Marketing img" width="100%">
+        </figure>
+        <div class="content">
+        <h3> Digital Marketing </h3>
+        <p>Driving growth with targeted online marketing strategies <br><br> <span> Not Available Yet. </span> </p> 
+        </div>
+      </div>
+      <div class="sd">
+        <figure>
+         <img src="{% static 'img/em.png' %}" alt="email Marketing img" width="100%">
+        </figure>
+        <div class="content">
+        <h3> Email Marketing </h3>
+        <p>Engaging customers with personalized email campaigns<br><br> <span> Not Available Yet. </span> </p>
+        </div>
+      </div>
+   </div> 
+  </section>
+
+  <section id="contact">
+    <header  class="chead">
+      <h3> <i class= "fa-regular fa-message"></iclass></i>Get in Touch </h3>
+    </header>
+
+    <div class="cf">
+      <form id="cform" method="post">
+        {% csrf_token %}
+        <input type="text" placeholder="  Your Name" name="name" required/>
+        <input type="email" placeholder="  Your Email" name="email" required/>
+        <input type="text" placeholder="  Subject" name="subject" required>
+        <textarea id="message" cols="40" rows="8" class="textarea" placeholder=" Your Message..." name="message" required></textarea>
+        <input id="submit" type="submit" value="Send Message" />
+      </form>
+    </div>
+
+      <div class="info">
+        <p>I'm always open to discuss exciting projects and <br> new opportunities. Let's collaborate!</p>
+
+        <strong><span><i class= "fa-solid fa-envelope"></i></span> morteza@example.com</strong>
+        <strong><span><i class= "fa-solid fa-phone"></span></i>+98933*****01</strong>
+        <strong><span><i class= "fa-solid fa-location-dot"></span></i>Iran, Mashhad</strong>
+        <strong><span><i class= "fa-solid fa-clock"></i></span>Available: Mon-Fri, 9AM-6PM</strong>
+      </div>
+      <div class="icn">
+        <a href="https://github.com/morteza-dot"><i class="fa-brands fa-github"></i></a>
+        <a href="https://discordapp.com/users/morty2019"><i class="fa-brands fa-discord"></i></a>
+        <a href="https://www.linkedin.com/in/morteza-setoodeh-610618388?trk=contact-info"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/morteza_8.4?igsh=bnY1cHJ2Z2hsMTZn" ><i class="fa-brands fa-instagram"></i></a>
+      </div>
+  </section>
+</div>
+
+  <footer>
+    <h2>Morteza</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div>
+      <a href="https://github.com/morteza-dot"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/morteza-setoodeh-610618388?trk=contact-info"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://wa.me/989331411301"><i class="fa-solid fa-square-phone"></i></a>
+    </div>
+    <p>&copy; 2025 Morteza All Rights Reserved</p>
+  </footer>
+
+  <div id="homebtn">
+    <a href="#home">
+    <i class="fa-solid fa-chevron-up"></i>
+    </a> 
+  </div>
+</main>
+
+<script src="{% static 'js/config.js' %}"></script>
+</body>
+
+</html>
