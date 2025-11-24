@@ -217,12 +217,15 @@
     <div class="cf">
       <form id="cform" method="post">
         {% csrf_token %}
-        <input type="text" placeholder="  Your Name" name="name" required/>
-        <input type="email" placeholder="  Your Email" name="email" required/>
-        <input type="text" placeholder="  Subject" name="subject" required>
+        <input id="name" type="text" placeholder="  Your Name" name="name" required/>
+        <input id="email" type="email" placeholder="  Your Email" name="email" required/>
+        <input id="subject" type="text" placeholder="  Subject" name="subject" required>
         <textarea id="message" cols="40" rows="8" class="textarea" placeholder=" Your Message..." name="message" required></textarea>
-        <input id="submit" type="submit" value="Send Message" />
+        <input id="submit" type="submit" value="Send Message" onclick="checkForm()" />
       </form>
+      <div class="msg">
+        <p id="msg"></p>
+      </div>
     </div>
 
       <div class="info">
@@ -232,12 +235,6 @@
         <strong><span><i class= "fa-solid fa-phone"></span></i>+98933*****01</strong>
         <strong><span><i class= "fa-solid fa-location-dot"></span></i>Iran, Mashhad</strong>
         <strong><span><i class= "fa-solid fa-clock"></i></span>Available: Mon-Fri, 9AM-6PM</strong>
-      </div>
-      <div class="icn">
-        <a href="https://github.com/morteza-dot"><i class="fa-brands fa-github"></i></a>
-        <a href="https://discordapp.com/users/morty2019"><i class="fa-brands fa-discord"></i></a>
-        <a href="https://www.linkedin.com/in/morteza-setoodeh-610618388?trk=contact-info"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/morteza_8.4?igsh=bnY1cHJ2Z2hsMTZn" ><i class="fa-brands fa-instagram"></i></a>
       </div>
   </section>
 </div>
